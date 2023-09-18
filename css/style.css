@@ -111,8 +111,31 @@ footer h4 {
             position: relative;
             top: 200px;
         }
-    .p1inicio{
-        position: relative;
-        top: 250px;
+        .p1inicio{
+            position: relative;
+            top: 250px;
+    }
+}
+@media (max-width:620px){
+    h1{
+        font-size: 55px;
+    }
+    .mandala{
+        width: 80px;
+        height: 80px;
+        margin-top: -70px;
+        margin-left: 345px;
+    }
+}
+@media (max-width: 485px){
+    h1{
+        font-size:45px ;
+        bottom: -5px;
+    }
+    .mandala{
+        width: 60px;
+        height: 60px;
+        margin-top: -80px;
+        margin-left: 280px;
     }
 }
