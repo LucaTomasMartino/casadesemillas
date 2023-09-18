@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header-arriba{
+    background-color: rgb(130, 238, 211);
+}
+.redes a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: blueviolet;
+}
+h1{
+    font-family: 'Lobster', cursive;
+    color: rgb(177, 112, 238);
+    font-size: 65px;
+    position: relative;
+    margin-left: 10px;
+}
+.fondoh1{
+    background-image: url(https://previews.123rf.com/images/ekaart/ekaart1602/ekaart160201129/52451298-s%C3%ADmbolos-de-geometr%C3%ADa-sagrada-y-elementos-de-fondo-alchemy-religi%C3%B3n-filosof%C3%ADa-astrolog%C3%ADa-y.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.mandala{
+    width: 90px;
+    height: 90px;
+    margin-top: -80px;
+    margin-left: 385px;
+}
+.barraDeNavegacion {
+    border-top: 3px solid #ffffff;
+    width: 100%;
+    background-color: rgb(130, 238, 211);
+    font-family: "Almendra SC", serif;
+}
+#menu a:hover {
+    background-color: rgb(130, 238, 211);
+    background: blueviolet;
+    animation: 1s ms 1;
+}
+.nav-label,.nav-input {
+    display: none;
+}
+@keyframes ms {
+    0% {
+    opacity: 0;
+    transform: scale(1.2);
+    }
+}
+ul {
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+}
+li {
+    float: left;
+}
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 26px 50px;
+    text-decoration: none;
+}
+footer {
+    background-color: rgb(130, 238, 211);
+    position: relative;
+    padding: 20px;
+}
+footer h4 {
+    text-align: center;
+    font-family: "Almendra SC", serif;
+    color: blueviolet;
+}
+@media (max-width: 720px){
+    .nav-container {
+            position: relative;
+            background-color: rgb(130, 238, 211);
+        }
+        .nav-label {
+            background-color: rgb(130, 238, 211);
+            display: block;
+            cursor: pointer;
+        }
+        .barraDeNavegacion {
+            position: fixed;
+            top: auto;
+            bottom: auto;
+            background-color: rgb(130, 238, 211);
+            width: 100%;
+            left: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            clip-path: circle(0 at top left);
+            transition: clip-path 0.5s ease-in-out;
+            z-index: 1;
+            border-top: 1px solid #ffffff;
+        }
+        .nav-input:checked + .barraDeNavegacion {
+            clip-path: circle(100% at center);
+        }
+        h2{
+            position: relative;
+            top: 200px;
+        }
+    .p1inicio{
+        position: relative;
+        top: 250px;
+    }
+}
