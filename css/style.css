@@ -139,3 +139,14 @@ footer h4 {
         margin-left: 280px;
     }
 }
+@media (max-width: 341px){
+    h1{
+        font-size: 30px;
+        bottom: -15px;
+    }
+    .mandala{
+        width: 35px;
+        height: 35px;
+        margin-left: 185px;
+    }
+}
