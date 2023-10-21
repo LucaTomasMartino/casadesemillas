@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    background-color: aquamarine;
 }
 .header-arriba{
     background-color: rgb(130, 238, 211);
@@ -16,7 +17,7 @@ body{
 .redes a{
     margin-right: 15px;
     text-decoration: none;
-    color: blueviolet;
+    color: rgb(5, 5, 56);
 }
 .fondo-logo{
     background-color: aquamarine;
@@ -25,21 +26,15 @@ body{
     width: 600px; 
     height: auto; 
 }
-.mandala{
-    width: 90px;
-    height: 90px;
-    margin-top: -80px;
-    margin-left: 385px;
-}
 .barraDeNavegacion {
-    border-top: 3px solid #ffffff;
+    border-top: 1.5px solid #ffffff;
     width: 100%;
     background-color: rgb(130, 238, 211);
     font-family: "Almendra SC", serif;
 }
 #menu a:hover {
     background-color: rgb(130, 238, 211);
-    background: blueviolet;
+    background: rgb(5, 5, 56);
     animation: 1s ms 1;
 }
 .nav-label,.nav-input {
@@ -69,6 +64,55 @@ li a {
     padding: 26px 50px;
     text-decoration: none;
 }
+.container{
+    width: 100%;
+    display: flex;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    border: 2px solid rgb(5, 5, 56);
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba (0,0,0,0.2);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba (0,0,0,0.4);
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height:auto
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+}
+.card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #2fb4cc;
+    border: 1px solid #2fb4cc;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenido a :hover{
+    background:#2fb4cc ;
+    color: #fff;
+}
 footer {
     background-color: rgb(130, 238, 211);
     position: relative;
@@ -77,7 +121,7 @@ footer {
 footer h4 {
     text-align: center;
     font-family: "Almendra SC", serif;
-    color: blueviolet;
+    color: rgb(5, 5, 56);
 }
 @media (max-width: 720px){
     .nav-container {
@@ -92,7 +136,7 @@ footer h4 {
         .bi-list{
             width: 35px;
             height: 35px;
-            color: blueviolet;
+            color: rgb(5, 5, 56);
         }
         .barraDeNavegacion {
             position: fixed;
