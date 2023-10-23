@@ -10,6 +10,7 @@ body{
     align-items: center;
     font-family: sans-serif;
     background-color: aquamarine;
+    background-image: url(/assets/comunidad.jpg);
 }
 .header-arriba{
     background-color: rgb(130, 238, 211);
@@ -63,6 +64,166 @@ li a {
     text-align: center;
     padding: 26px 50px;
     text-decoration: none;
+}
+
+#card-bienvenida {
+    position: absolute; /* Permite posicionar la tarjeta de bienvenida encima de la imagen de fondo */
+    top: 60%; /* Coloca la tarjeta en el centro verticalmente */
+    left: 50%; /* Coloca la tarjeta en el centro horizontalmente */
+    transform: translate(-50%, -50%); /* Centra la tarjeta exactamente en el centro */
+    background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semitransparente para hacer el texto legible */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 650px; /* Ancho máximo de la tarjeta */
+}
+.letras-bienvenida1{
+    color: #fff;
+    line-height: 35px; 
+}
+.letras-bienvenida2{
+    color: #fff;
+    line-height: 20px; 
+}
+.boton-card-container{
+    margin-top: 20px;
+}
+.boton-card {
+    text-align: center; /* Centra el texto dentro del botón */
+    text-decoration: none;
+    background-color: #fff; /* Fondo transparente para que no tenga color de fondo */
+    color: #2fb4cc; /* Cambia el color del texto y del borde a #2fb4cc */
+    border: 2px solid #2fb4cc; /* Establece un borde sólido de 2px con el color #2fb4cc */
+    border-radius: 8px; /* Establece un border radius de 8px para hacer las esquinas redondeadas */
+    padding: 10px 20px; /* Agrega un relleno para dar espacio alrededor del texto */
+    transition: background-color 0.3s, color 0.3s; /* Agrega una transición para suavizar el cambio de color de texto y borde */
+}
+.boton-card:hover {
+    background-color:#2fb4cc ; /* Cambia el color de fondo a blanco en el hover */
+    color: #fff; /* Cambia el color del texto a #2fb4cc en el hover */
+}
+.img-fondo{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.nosotros{
+    position: relative;
+    background-image: url('../assets/fondo-flor-de-vida.jpg'); /* Establece la imagen como fondo */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
+    background-position: center center; /* Centra la imagen horizontal y verticalmente */
+    width: 100%; /* Ancho del div (ajusta según tus necesidades) */
+    height: 110px; /* Altura del div (ajusta según tus necesidades) */ /* Color del texto que se verá sobre la imagen */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px; /* Espaciado interno del div */
+    border: rgba(0, 0, 0, 0.7) solid;
+}
+.h2-nosotros{
+    font-size: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 50%; /* Coloca el texto en la mitad superior del contenedor */
+    left: 50%; /* Lo centra horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta el texto para centrarlo completamente */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+.nosotros:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, black, blueviolet, aquamarine, blueviolet, black, blueviolet, aquamarine, blueviolet);
+    background-size: 800%;
+    border-radius: 12px;
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+.card-nosotros{
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 350px;
+    margin: 20px;
+}
+.card-nosotros .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    transition: .5s;
+}
+.card-nosotros .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card-nosotros .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-nosotros .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+.card-nosotros .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card-nosotros .back .link{
+    border-top: solid 1px #fff;
+    height: 50px;
+    line-height: 50px;
+}
+.card-nosotros .back .link a{
+    color: #fff;
+}
+.card-nosotros .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card-nosotros .back p{
+    letter-spacing: 1px;
+}
+.card-nosotros:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card-nosotros:hover .back{
+    transform: perspective(600px) rotateY(360deg);
 }
 .container{
     width: 100%;
