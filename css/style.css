@@ -9,6 +9,9 @@ body{
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    font-family: 'Kalam', cursive;
+font-family: 'Lobster', sans-serif;
+font-family: 'Playpen Sans', cursive;
     background-color: aquamarine;
     background-image: url(/assets/comunidad.jpg);
 }
@@ -60,12 +63,12 @@ li {
 }
 li a {
     display: block;
+    font-size: 25px;
     color: #ffffff;
     text-align: center;
     padding: 26px 50px;
     text-decoration: none;
 }
-
 #card-bienvenida {
     position: absolute; /* Permite posicionar la tarjeta de bienvenida encima de la imagen de fondo */
     top: 60%; /* Coloca la tarjeta en el centro verticalmente */
@@ -108,81 +111,59 @@ li a {
     background-size: cover;
     background-attachment: fixed;
 }
-.nosotros{
-    position: relative;
-    background-image: url('../assets/fondo-flor-de-vida.jpg'); /* Establece la imagen como fondo */
-    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el div */
-    background-position: center center; /* Centra la imagen horizontal y verticalmente */
-    width: 100%; /* Ancho del div (ajusta según tus necesidades) */
-    height: 110px; /* Altura del div (ajusta según tus necesidades) */ /* Color del texto que se verá sobre la imagen */
-    text-align: center; /* Centra el texto horizontalmente */
-    padding: 20px; /* Espaciado interno del div */
-    border: rgba(0, 0, 0, 0.7) solid;
+.flor-de-vida{
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
 }
 .h2-nosotros{
-    font-size: 55px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    position: absolute;
-    top: 50%; /* Coloca el texto en la mitad superior del contenedor */
-    left: 50%; /* Lo centra horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta el texto para centrarlo completamente */
-    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 65px;
+    margin-top: -118px;
+    margin-left: 120px;
+    color: #383838e3;
 }
-.nosotros:hover::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(45deg, black, blueviolet, aquamarine, blueviolet, black, blueviolet, aquamarine, blueviolet);
-    background-size: 800%;
-    border-radius: 12px;
-    filter: blur(8px);
-    animation: glowing 20s linear infinite;
+.parrafos-nosotros{
+    margin-top: 50px;
+    font-size: 25px;
+    text-indent: 35px;
+}  
+.img-staff{
+    width: 350px;
+    height: auto;
+    margin-left: 550px;
+    margin-top: -50px;
 }
-
-@keyframes glowing {
-    0% {
-        background-position: 0 0;
-    }
-    50% {
-        background-position: 400% 0;
-    }
-    100% {
-        background-position: 0 0;
-    }
-}
-.card-nosotros{
+#card-nosotros{
     position: relative;
+    margin-top: 50px;
     display: inline-block;
     width: 300px;
     height: 350px;
-    margin: 20px;
+    margin-left: 90px;
+    border-radius: 1px; /* Aplica el borde redondeado */
+    border: 1px solid  rgb(5, 5, 56); /* Aplica una línea azul */
 }
-.card-nosotros .face{
+#card-nosotros .face{
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
     border-radius: 10px;
     transition: .5s;
+    border-radius: 1px; /* Aplica el borde redondeado */
+    border: 1px solid  rgb(5, 5, 56); /* Aplica una línea azul */
 }
-.card-nosotros .front{
+#card-nosotros .front{
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
 }
-.card-nosotros .front img{
+#card-nosotros .front img{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.card-nosotros .front h3{
+#card-nosotros .front h3{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -192,7 +173,7 @@ li a {
     background: rgba(0, 0, 0, 0.5);
     text-align: center;
 }
-.card-nosotros .back{
+#card-nosotros .back{
     transform: perspective(600px) rotateY(180deg);
     background: rgba(0, 0, 0, 0.7);
     padding: 15px;
@@ -203,31 +184,48 @@ li a {
     text-align: center;
     box-shadow: 0 5px 10px #000;
 }
-.card-nosotros .back .link{
+#card-nosotros .back .link{
     border-top: solid 1px #fff;
     height: 50px;
     line-height: 50px;
 }
-.card-nosotros .back .link a{
+#card-nosotros .back .link a{
     color: #fff;
 }
-.card-nosotros .back h3{
+#card-nosotros .back h3{
     font-size: 30px;
     margin-top: 20px;
     letter-spacing: 2px;
 }
-.card-nosotros .back p{
+#card-nosotros .back p{
     letter-spacing: 1px;
 }
-.card-nosotros:hover .front{
+#card-nosotros:hover .front{
     transform: perspective(600px) rotateY(180deg);
 }
-.card-nosotros:hover .back{
+#card-nosotros:hover .back{
     transform: perspective(600px) rotateY(360deg);
+}
+.img-contenidos{
+    width: 120px;
+    height: auto;
+    margin-top: 120px;
+}
+.h2-contenidos{
+    font-size: 65px;
+    margin-top: -118px;
+    margin-left: 120px;
+    color: #383838e3;
+}
+.parrafos-contenidos{
+    margin-top: 50px;
+    font-size: 25px;
+    text-indent: 35px;
 }
 .container{
     width: 100%;
     display: flex;
+    margin-top: 50px;
 }
 .card{
     width: 100%;
@@ -283,6 +281,57 @@ footer h4 {
     text-align: center;
     font-family: "Almendra SC", serif;
     color: rgb(5, 5, 56);
+}
+@media (max-width: 1024px){
+    #card-bienvenida{
+        top: 80%;
+    }
+    .img-staff{
+        width: 300px;
+    }
+}
+@media (max-width: 768px){
+    li a{
+        font-size: 20px;
+    }
+    .img-fondo{
+        height: 480px;
+    }
+    .flor-de-vida{
+        width: 95px;
+    }
+    .h2-nosotros{
+        font-size: 55px;
+        margin-top: -95px;
+        margin-left: 100px;
+    }
+    .parrafos-nosotros{
+        margin-top: 35px;
+        font-size: 20px;
+        text-indent: 25px;
+    }
+    .img-staff{
+        width: 200px;
+        margin-left: 450px;
+        margin-top: -25px;
+    }
+    #card-nosotros{
+        margin-left: 225px;
+    }
+    .img-contenidos{
+        width: 95px;
+        margin-top: 60px;
+    }
+    .h2-contenidos{
+        font-size: 55px;
+        margin-top: -95px;
+        margin-left: 100px;
+    }
+    .parrafos-contenidos{
+        margin-top: 35px;
+        font-size: 20px;
+        text-indent: 25px;
+    }
 }
 @media (max-width: 720px){
     .nav-container {
