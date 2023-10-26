@@ -371,11 +371,39 @@ footer h4 {
             position: relative;
             top: 200px;
         }
-        .p1inicio{
-            position: relative;
-            top: 250px;
+        #card-bienvenida{
+            top: 65%;
+        }
+        .img-fondo{
+            height: 400px;
+        }
+        .flor-de-vida{
+            width: 80px;
+        }
+        .h2-nosotros{
+            font-size: 45px;
+            margin-top: -280px;
+            margin-left: 90px;
+        }
+        .parrafos-nosotros{
+            margin-top: 105px;
+        }
+        #card-nosotros{
+            margin-left: 210px;
+        }
+        .img-contenidos{
+            width: 80px;
+            margin-top: 50px;
+        }
+        .h2-contenidos{
+            font-size: 45px;
+            margin-top: -280px;
+            margin-left: 90px;
+        }
+        .parrafos-contenidos{
+            margin-top: 145px;
+        }
     }
-}
 @media (max-width:620px){
     h1{
         font-size: 55px;
