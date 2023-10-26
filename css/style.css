@@ -427,6 +427,39 @@ footer h4 {
         margin-left: 280px;
     }
 }
+@media (max-width: 425px){
+    .logo{
+        width: 300px;
+    }
+    .img-fondo{
+        height: 250px;
+    }
+    #card-bienvenida{
+        width: 450px;
+        top: 40%;
+    }
+    .letras-bienvenida1{
+        font-size: 18px;
+    }
+    .letras-bienvenida2{
+        font-size: 16px;
+    }
+    .boton-card-container{
+        font-size: 14px;
+    }
+    .flor-de-vida{
+        width: 60px;
+    }
+    .h2-nosotros{
+        font-size: 35px;
+        margin-top: -265px;
+        margin-left: 70px;
+    }
+    .parrafos-nosotros{
+        margin-top: 95px;
+        font-size: 25px;
+    }
+}
 @media (max-width: 341px){
     h1{
         font-size: 30px;
