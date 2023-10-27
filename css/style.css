@@ -435,7 +435,7 @@ footer h4 {
         height: 250px;
     }
     #card-bienvenida{
-        width: 450px;
+        width: 420px;
         top: 40%;
     }
     .letras-bienvenida1{
@@ -457,7 +457,31 @@ footer h4 {
     }
     .parrafos-nosotros{
         margin-top: 95px;
-        font-size: 25px;
+    }
+    .img-staff{
+        width: 200px;
+        margin-left: 0px;
+        margin-top: 0px;
+    }
+    #card-nosotros{
+        width: 250px;
+        height: 300px;
+        margin-left: 88px;
+    }
+    .img-contenidos{
+        width: 60px;
+    }
+    .h2-contenidos{
+        font-size: 35px;
+        margin-top: -265px;
+        margin-left: 70px;
+    }
+    .parrafos-contenidos{
+        margin-top: 130px;
+    }
+    .container{
+        flex-wrap: wrap;
+        text-align: center;
     }
 }
 @media (max-width: 341px){
