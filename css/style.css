@@ -133,13 +133,18 @@ li a {
     margin-left: 550px;
     margin-top: -50px;
 }
+.container-card-nosotros{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
 #card-nosotros{
     position: relative;
     margin-top: 50px;
-    display: inline-block;
     width: 300px;
     height: 350px;
-    margin-left: 90px;
     border-radius: 1px; /* Aplica el borde redondeado */
     border: 1px solid  rgb(5, 5, 56); /* Aplica una línea azul */
 }
@@ -315,9 +320,6 @@ footer h4 {
         margin-left: 450px;
         margin-top: -25px;
     }
-    #card-nosotros{
-        margin-left: 225px;
-    }
     .img-contenidos{
         width: 95px;
         margin-top: 60px;
@@ -388,9 +390,6 @@ footer h4 {
         .parrafos-nosotros{
             margin-top: 105px;
         }
-        #card-nosotros{
-            margin-left: 210px;
-        }
         .img-contenidos{
             width: 80px;
             margin-top: 50px;
@@ -404,29 +403,6 @@ footer h4 {
             margin-top: 145px;
         }
     }
-@media (max-width:620px){
-    h1{
-        font-size: 55px;
-    }
-    .mandala{
-        width: 80px;
-        height: 80px;
-        margin-top: -70px;
-        margin-left: 345px;
-    }
-}
-@media (max-width: 485px){
-    h1{
-        font-size:45px ;
-        bottom: -5px;
-    }
-    .mandala{
-        width: 60px;
-        height: 60px;
-        margin-top: -80px;
-        margin-left: 280px;
-    }
-}
 @media (max-width: 425px){
     .logo{
         width: 300px;
@@ -466,7 +442,6 @@ footer h4 {
     #card-nosotros{
         width: 250px;
         height: 300px;
-        margin-left: 88px;
     }
     .img-contenidos{
         width: 60px;
@@ -484,14 +459,15 @@ footer h4 {
         text-align: center;
     }
 }
-@media (max-width: 341px){
-    h1{
-        font-size: 30px;
-        bottom: -15px;
+@media (max-width: 375px){
+    #card-bienvenida{
+        width: 370px;
+        top: 41%;
     }
-    .mandala{
-        width: 35px;
-        height: 35px;
-        margin-left: 185px;
+    .boton-card-container{
+        font-size: 12px;
+    }
+    #card-nosotros{
+
     }
 }
