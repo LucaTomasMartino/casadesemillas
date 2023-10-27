@@ -30,44 +30,27 @@ font-family: 'Playpen Sans', cursive;
     width: 600px; 
     height: auto; 
 }
-.barraDeNavegacion {
-    border-top: 1.5px solid #ffffff;
-    width: 100%;
-    background-color: rgb(130, 238, 211);
-    font-family: "Almendra SC", serif;
-}
-#menu a:hover {
-    background-color: rgb(130, 238, 211);
-    background: rgb(5, 5, 56);
-    animation: 1s ms 1;
-}
-.nav-label,.nav-input {
-    display: none;
-}
-@keyframes ms {
-    0% {
-    opacity: 0;
-    transform: scale(1.2);
-    }
-}
-ul {
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
+.nav-list {
+    border-top: 1px solid rgb(5, 5, 56);
+    background-color:rgb(130, 238, 211) ;
+    list-style-type: none;
     display: flex;
     justify-content: center;
-    color: #ffffff;
+    gap: 6rem;
 }
-li {
-    float: left;
-}
-li a {
-    display: block;
-    font-size: 25px;
-    color: #ffffff;
-    text-align: center;
-    padding: 26px 50px;
+.nav-list li a {
     text-decoration: none;
+    color: #1c1c1c;
+    font-size: 25px;
+}
+.nav-list li a:hover{
+    color:#fff;
+    background-color: #1c1c1c;
+    border-radius: 5px;
+}
+.abrir-menu,
+.cerrar-menu {
+    display: none;
 }
 #card-bienvenida {
     position: absolute; /* Permite posicionar la tarjeta de bienvenida encima de la imagen de fondo */
@@ -139,6 +122,7 @@ li a {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    margin-bottom: 35px;
 }
 #card-nosotros{
     position: relative;
@@ -299,6 +283,60 @@ footer h4 {
     li a{
         font-size: 20px;
     }
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+        font-size: 35px;
+        width: 100%;
+        left: 0;
+        display: flex;
+        justify-content: flex-start;
+        background-color: rgb(130, 238, 211);
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+        font-size: 25px;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list {
+        background-color: #1c1c1c;
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
     .img-fondo{
         height: 480px;
     }
@@ -336,39 +374,7 @@ footer h4 {
     }
 }
 @media (max-width: 720px){
-    .nav-container {
-            position: relative;
-            background-color: rgb(130, 238, 211);
-        }
-        .nav-label {
-            background-color: rgb(130, 238, 211);
-            display: block;
-            cursor: pointer;
-        }
-        .bi-list{
-            width: 35px;
-            height: 35px;
-            color: rgb(5, 5, 56);
-        }
-        .barraDeNavegacion {
-            position: fixed;
-            top: auto;
-            bottom: auto;
-            background-color: rgb(130, 238, 211);
-            width: 100%;
-            left: auto;
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
-            align-items: center;
-            clip-path: circle(0 at top left);
-            transition: clip-path 0.5s ease-in-out;
-            z-index: 1;
-            border-top: 1px solid #ffffff;
-        }
-        .nav-input:checked + .barraDeNavegacion {
-            clip-path: circle(100% at center);
-        }
+
         h2{
             position: relative;
             top: 200px;
