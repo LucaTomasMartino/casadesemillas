@@ -291,7 +291,6 @@ footer h4 {
         background-color: transparent;
         cursor: pointer;
     }
-
     .abrir-menu {
         color: #1c1c1c;
         font-size: 35px;
@@ -301,12 +300,10 @@ footer h4 {
         justify-content: flex-start;
         background-color: rgb(130, 238, 211);
     }
-
     .cerrar-menu {
         color: #ececec;
         font-size: 25px;
     }
-
     .nav {
         opacity: 0;
         visibility: hidden;
@@ -322,23 +319,23 @@ footer h4 {
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
-
     .nav.visible {
         opacity: 1;
         visibility: visible;
     }
-
     .nav-list {
         background-color: #1c1c1c;
         flex-direction: column;
         align-items: end;
     }
-
     .nav-list li a {
         color: #ecececec;
     }
     .img-fondo{
-        height: 480px;
+        height: 420px;
+    }
+    #card-bienvenida{
+        top: 65%;
     }
     .flor-de-vida{
         width: 95px;
@@ -373,8 +370,20 @@ footer h4 {
         text-indent: 25px;
     }
 }
+@media (max-width: 757px){
+    .container-card-nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+}
+#card-nosotros{
+    width: 350px; /* Ajusta el ancho según tus necesidades */
+  margin: 10px;
+}
 @media (max-width: 720px){
-
         h2{
             position: relative;
             top: 200px;
