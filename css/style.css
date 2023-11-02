@@ -10,8 +10,8 @@ body{
     align-items: center;
     font-family: sans-serif;
     font-family: 'Kalam', cursive;
-font-family: 'Lobster', sans-serif;
-font-family: 'Playpen Sans', cursive;
+    font-family: 'Lobster', sans-serif;
+    font-family: 'Playpen Sans', cursive;
     background-color: aquamarine;
     background-image: url(/assets/comunidad.jpg);
 }
@@ -55,7 +55,7 @@ font-family: 'Playpen Sans', cursive;
 }
 #card-bienvenida {
     position: absolute; /* Permite posicionar la tarjeta de bienvenida encima de la imagen de fondo */
-    top: 60%; /* Coloca la tarjeta en el centro verticalmente */
+    margin-top: -400px; /* Coloca la tarjeta en el centro verticalmente */
     left: 50%; /* Coloca la tarjeta en el centro horizontalmente */
     transform: translate(-50%, -50%); /* Centra la tarjeta exactamente en el centro */
     background-color: rgba(0, 0, 0, 0.7); /* Color de fondo semitransparente para hacer el texto legible */
@@ -274,7 +274,7 @@ footer h4 {
 }
 @media (max-width: 1024px){
     #card-bienvenida{
-        top: 80%;
+        margin-top: -380px;
     }
     .img-staff{
         width: 300px;
@@ -300,6 +300,8 @@ footer h4 {
         display: flex;
         justify-content: flex-start;
         background-color: rgb(130, 238, 211);
+        border-top: 0.5px solid rgb(5, 5, 56);
+        border-bottom:0.5px solid rgb(5, 5, 56);
     }
     .cerrar-menu {
         color: #ececec;
@@ -339,7 +341,7 @@ footer h4 {
         height: 420px;
     }
     #card-bienvenida{
-        top: 58%;
+        margin-top: -220px;
         z-index: 999; 
     }
     .flor-de-vida{
@@ -394,7 +396,7 @@ footer h4 {
             top: 200px;
         }
         #card-bienvenida{
-            top: 65%;
+            margin-top: -180px;
         }
         .img-fondo{
             height: 400px;
@@ -433,7 +435,7 @@ footer h4 {
     #card-bienvenida{
         width: 420px;
         max-width: 100%;
-        top: 37%;
+        margin-top: -130px;
     }
     .letras-bienvenida1{
         font-size: 18px;
@@ -488,7 +490,7 @@ footer h4 {
 @media (max-width: 375px){
     #card-bienvenida{
         width: 370px;
-        top: 37%;
+        margin-top: -125px;
     }
     .boton-card-container{
         font-size: 12px;
@@ -500,5 +502,28 @@ footer h4 {
     }
     .letras-bienvenida2{
         line-height: 19px;
+}
+}
+@media (max-width: 350px){
+.letras-bienvenida1{
+    font-size: 16px;
+}
+.letras-bienvenida2{
+    font-size: 14px;
+}
+.boton-card-container{
+    font-style: 13px;
+}
+.flor-de-vida{
+    width: 50px;
+}
+.h2-nosotros{
+    font-size: 25px;
+    margin-top: -250px;
+    margin-left: 60px;
+}
+.parrafos-nosotros{
+    margin-top: 85px;
+    font-size: 18px;
 }
 }
