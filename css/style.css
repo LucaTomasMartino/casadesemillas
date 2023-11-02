@@ -280,6 +280,21 @@ footer h4 {
         width: 300px;
     }
 }
+@media (max-width: 850px){
+    .img-staff{
+        width: 250px;
+    }
+}
+@media (max-width: 800px){
+    .img-staff{
+        width: 200px;
+    }
+}
+@media (max-width: 817px){
+    #card-nosotros .front h3{
+        font-size: 15px;
+    }
+}
 @media (max-width: 768px){
     li a{
         font-size: 20px;
@@ -424,7 +439,42 @@ footer h4 {
         .parrafos-contenidos{
             margin-top: 145px;
         }
+}
+@media (max-width: 650px){
+    .img-staff{
+        width: 150px;
     }
+}
+@media (max-width: 600px){
+    .logo{
+        width: 480px;
+    }
+    .img-staff{
+        width: 100px;
+    }
+}
+@media (max-width: 575px){
+    #card-bienvenida{
+        width: 520px;
+        max-width: 100%;
+    }
+    .img-staff{
+        display: none;
+    }
+}
+@media (max-width: 530px){
+    .img-fondo{
+        height: 400px;
+    }
+}
+@media (max-width: 479px){
+    .logo{
+        width: 420px;
+    }
+    .img-fondo{
+        height: 350px;
+    }
+}
 @media (max-width: 425px){
     .logo{
         width: 300px;
@@ -458,6 +508,7 @@ footer h4 {
         margin-top: 95px;
     }
     .img-staff{
+        display: block;
         width: 200px;
         margin-left: 0px;
         margin-top: 0px;
@@ -475,7 +526,7 @@ footer h4 {
         letter-spacing: 1px;
     }
     #card-nosotros .back p{
-        font-size: 14px;
+        font-size: 12px;
     }
     .img-contenidos{
         width: 60px;
