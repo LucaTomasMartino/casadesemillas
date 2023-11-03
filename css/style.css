@@ -263,14 +263,47 @@ body{
     color: #fff;
 }
 footer {
+    width: 100%;
+    padding: 5px 60px;
+    background-image: url(../assets/background-footer.svg);
     background-color: rgb(130, 238, 211);
-    position: relative;
-    padding: 20px;
 }
-footer h4 {
+.container-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+.box-footer{
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.box-footer .logo-footer img{
+    width: 180px;
+}
+.box-footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #7a7a7a;
+}
+.box-copy{
+    max-width: 1200px;
+    margin: auto;
     text-align: center;
-    font-family: "Almendra SC", serif;
-    color: rgb(5, 5, 56);
+    padding: 0px 40px;
+}
+.box-copy p{
+    margin-top: 20px;
+    color: #7a7a7a;
+}
+.box-copy hr{
+    border: none;
+    height: 1px;
+    background-color: #7a7a7a;
 }
 @media (max-width: 1024px){
     #card-bienvenida{
