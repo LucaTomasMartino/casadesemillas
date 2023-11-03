@@ -281,7 +281,7 @@ footer {
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .box-footer{
     display: flex;
@@ -616,7 +616,7 @@ footer {
         padding: 0px 15px;
     }
     .container-footer{
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .box-footer{
         padding: 30px;
@@ -630,7 +630,7 @@ footer {
         font-size: 10px;
     }
     .box-copy{
-        padding: 0px 20px;
+        padding: 1px 20px;
     }
     .box-copy p{
         margin-top: 10px;
