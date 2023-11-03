@@ -15,6 +15,9 @@ body{
     background-color: aquamarine;
     background-image: url(/assets/comunidad.jpg);
 }
+p{
+    font-size: 18px;
+}
 .header-arriba{
     background-color: rgb(130, 238, 211);
 }
@@ -115,7 +118,7 @@ body{
     width: 350px;
     height: auto;
     margin-left: 550px;
-    margin-top: -50px;
+    margin-top: -20px;
 }
 .click-info-cards{
     display: none;
@@ -544,6 +547,9 @@ footer {
     }
     .img-fondo{
         height: 250px;
+    }
+    p{
+        font-size: 16px;
     }
     #card-bienvenida{
         width: 420px;
