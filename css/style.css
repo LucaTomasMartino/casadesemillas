@@ -115,6 +115,10 @@ p{
     margin-top: 50px;
     font-size: 25px;
     text-indent: 35px;
+    border: 1px solid rgb(130, 238, 211);
+    padding: 10px;
+    border-radius: 40px;
+    background-color: rgb(130, 238, 211);
 }  
 .img-staff{
     width: 350px;
@@ -219,6 +223,10 @@ p{
     margin-top: 50px;
     font-size: 25px;
     text-indent: 35px;
+    border: 1px solid rgb(130, 238, 211);
+    padding: 10px;
+    border-radius: 40px;
+    background-color: rgb(130, 238, 211);
 }
 .container{
     width: 100%;
@@ -274,7 +282,6 @@ footer {
     width: 100%;
     padding: 5px 60px;
     background-image: url(../assets/background-footer.svg);
-
     overflow-x: hidden;
 }
 .container-footer{
@@ -627,7 +634,7 @@ footer {
         width: 100px;
     }
     .box-footer .terms{
-        max-width: 150px;
+        max-width: 250px;
         margin-top: 10px;
         font-size: 10px;
     }
