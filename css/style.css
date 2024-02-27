@@ -12,7 +12,6 @@ body{
     font-family: 'Kalam', cursive;
     font-family: 'Lobster', sans-serif;
     font-family: 'Playpen Sans', cursive;
-    background-color: aquamarine;
     background-image: url(/assets/comunidad.jpg);
 }
 p{
@@ -21,23 +20,24 @@ p{
     margin-right: 40px;
 }
 .header-arriba{
-    background-color: rgb(130, 238, 211);
+    background-color: rgb(51, 19, 19);
 }
 .redes a{
     margin-right: 15px;
     text-decoration: none;
-    color: rgb(5, 5, 56);
+    color: white;
 }
 .fondo-logo{
-    background-color: aquamarine;
+
 }
 .logo{
-    width: 600px; 
-    height: auto; 
+    width: 180px; 
+    height: auto;
+    margin-left: 100px;
 }
 .nav-list {
     border-top: 1px solid rgb(5, 5, 56);
-    background-color:rgb(130, 238, 211) ;
+    background-color:rgb(51, 19, 19) ;
     list-style-type: none;
     display: flex;
     justify-content: center;
@@ -46,12 +46,12 @@ p{
 }
 .nav-list li a {
     text-decoration: none;
-    color: #1c1c1c;
+    color: white;
     font-size: 25px;
 }
 .nav-list li a:hover{
-    color:#fff;
-    background-color: #1c1c1c;
+    color:rgb(51, 19, 19);
+    background-color: white;
     border-radius: 5px;
 }
 .abrir-menu,
@@ -109,107 +109,42 @@ p{
     font-size: 65px;
     margin-top: -118px;
     margin-left: 120px;
-    color: #383838e3;
+    color: rgb(51, 19, 19);
 }
 .parrafos-nosotros{
     margin-top: 50px;
     font-size: 25px;
     text-indent: 35px;
-    border: 1px solid rgb(130, 238, 211);
+    border: 1px solid rgb(51, 19, 19);
     padding: 10px;
     border-radius: 40px;
-    background-color: rgb(130, 238, 211);
-}  
-.img-staff{
-    width: 350px;
-    height: auto;
-    margin-left: 550px;
-    margin-top: -20px;
+    background-color: rgba(172, 69, 69, 0.39);
 }
-.click-info-cards{
-    display: none;
+#programacion{
+    margin-top: 30px;
 }
-.container-card-nosotros{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-    margin-bottom: 35px;
+.h2-programacion{
+    font-size: 65px;
+    margin-top: -118px;
+    margin-left: 120px;
+    color: rgb(51, 19, 19);
 }
-#card-nosotros{
-    position: relative;
-    margin-top: 50px;
-    width: 300px;
-    height: 350px;
-    border-radius: 1px; /* Aplica el borde redondeado */
-    border: 1px solid  rgb(5, 5, 56); /* Aplica una línea azul */
-}
-#card-nosotros .face{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    transition: .5s;
-    border-radius: 1px; /* Aplica el borde redondeado */
-    border: 1px solid  rgb(5, 5, 56); /* Aplica una línea azul */
-}
-#card-nosotros .front{
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
-}
-#card-nosotros .front img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-#card-nosotros .front h3{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.5);
-    text-align: center;
-}
-#card-nosotros .back{
-    transform: perspective(600px) rotateY(180deg);
-    background: rgba(0, 0, 0, 0.7);
-    padding: 15px;
-    color: aliceblue;
+.contenedor-imagenes {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0 5px 10px #000;
+    align-items: center;
+    justify-content: center;
 }
-#card-nosotros .back .link{
-    border-top: solid 1px #fff;
-    height: 50px;
-    line-height: 50px;
-}
-#card-nosotros .back .link a{
-    color: #fff;
-}
-#card-nosotros .back h3{
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-}
-#card-nosotros .back p{
-    letter-spacing: 1px;
-}
-#card-nosotros:hover .front{
-    transform: perspective(600px) rotateY(180deg);
-}
-#card-nosotros:hover .back{
-    transform: perspective(600px) rotateY(360deg);
+
+.contenedor-imagenes img {
+    width: 650px;
+    height: auto;
+    margin-bottom: 10px; /* Espacio entre las imágenes, puedes ajustarlo según tus preferencias */
+    border: 2px solid rgb(51, 19, 19); /* Borde de 2 píxeles de grosor y color negro (puedes cambiar el color según tus preferencias) */
+    box-sizing: border-box;
 }
 .img-contenidos{
-    width: 120px;
+    width: 10px;
     height: auto;
     margin-top: 10px;
 }
@@ -223,10 +158,10 @@ p{
     margin-top: 50px;
     font-size: 25px;
     text-indent: 35px;
-    border: 1px solid rgb(130, 238, 211);
+    border: 1px solid rgb(51, 19, 19);
     padding: 10px;
     border-radius: 40px;
-    background-color: rgb(130, 238, 211);
+    background-color: rgba(172, 69, 69, 0.39);
 }
 .container{
     width: 100%;
