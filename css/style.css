@@ -292,15 +292,15 @@ footer {
         cursor: pointer;
     }
     .abrir-menu {
-        color: #1c1c1c;
+        color: white;
         font-size: 35px;
         width: 100%;
         left: 0;
         display: flex;
         justify-content: flex-start;
-        background-color: rgb(130, 238, 211);
-        border-top: 0.5px solid rgb(5, 5, 56);
-        border-bottom:0.5px solid rgb(5, 5, 56);
+        background-color: rgb(51, 19, 19);
+        border-top: 0.5px white;
+        border-bottom:0.5px white;
     }
     .cerrar-menu {
         color: #ececec;
@@ -487,7 +487,8 @@ footer {
 }
 @media (max-width: 425px){
     .logo{
-        width: 300px;
+        width: 80px;
+        margin-left: 25px;
     }
     .img-fondo{
         height: 250px;
@@ -519,6 +520,9 @@ footer {
     }
     .parrafos-nosotros{
         margin-top: 95px;
+    }
+    .contenedor-imagenes img{
+        width: 250px;
     }
     .img-staff{
         display: block;
